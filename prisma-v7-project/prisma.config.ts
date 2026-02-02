@@ -6,6 +6,6 @@ export default defineConfig({
     path: "prisma/migrations",
   },
   datasource: {
-    url: "mysql://devroot@localhost:3306/test_db",
+    url: "mysql://root@localhost:3306/test_db",
   },
 });

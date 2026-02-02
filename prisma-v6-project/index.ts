@@ -3,7 +3,6 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
 async function main() {
-  // Read data from the view and include the users relation
   const summaries = await prisma.user_post_summary.findMany({
     include: {
       last_post: true,
